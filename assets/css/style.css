@@ -1,0 +1,146 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;	
+	}
+
+
+	.carousel-inner, .carousel-item, .carousel-item img{
+		height: 60vh;	
+	}
+
+	.carousel-item img{
+		object-fit: cover;
+	}
+	
+	#showCase .carousel-caption{
+		bottom:auto;
+		top:50%;
+		transform: translateY(-50%);
+	}
+	#showCase .carousel-caption h5{
+		font-size: 60px;
+		font-weight: 300;
+		line-height: 1.2;
+	}
+	.header, .navbar-nav .nav-link{
+		text-transform:uppercase;
+	}
+	.iconThumnail > i{
+			font-size: 56px;
+	}
+	.iconThumnail > h3{
+		font-size: 26px;
+		margin: 10px 0;
+	}
+	.getReady{
+		background-image: url(../images/lights.jpg);	
+	}
+	
+	.getReady, .vedio{
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+	.getReady::before{
+		content: '';
+		background-color: rgba(0, 0, 0, .7);
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height: 100%;
+	}
+
+	.vedio{
+		background-image:url(../images/media.jpg)
+	}
+	.vedio::before{
+		content: '';
+		background-color: rgba(0, 0, 0, .7);
+		top:0;
+		left:0;
+		width:100%;
+		height: 100%;
+		position:absolute;
+	}
+
+	.playBtn{
+		color:#fff;
+		font-size: 48px;
+	}
+	.footer{
+		background-color: #000;
+	}
+
+
+	/*about us > Icons section*/
+
+	.Icons i{
+		font-size: 48px;
+	}
+
+	#testimonials .owl-theme .owl-nav{
+			display:none;
+	}
+
+	@media all and (min-width: 786px){
+		#testimonials .owl-theme .owl-nav{
+			margin-top: 10px;
+			display: block;
+			position: absolute;
+			top: -15px;
+			width: 100%;
+			left:0;
+			right: 0;
+			transform: translateY(-50%);
+			
+		}
+		#testimonials button.owl-prev{
+			position: absolute;
+			left: -60px;
+		}
+		#testimonials button.owl-next{
+			position: absolute;
+			right: -60px;
+		}
+		#testimonials button.owl-prev i, #testimonials button.owl-next i{
+			font-size: 60px;
+
+		}
+		.plans .card:hover{
+			transform: translateY(-20px) scale(1.02);
+		}
+			
+	}
+
+
+	/*#########service page css###########*/
+
+	.plans .list-group-item i{
+		font-size: 48px;
+	}
+			
+	.plans .card{
+		transition: all .4s ease-in-out;
+	}
+		
+	
+
+	/*#########service page css###########*/
+
+	.faq .card{
+		background-color: #444;
+	}
+	.faq a.card-link:link, .faq a.card-link:visited{
+		background-color: #444;
+		color: #fff !important;
+	}
+
+
+	.card-text, .card-text:link, .card-text:visited{
+		color:#000;
+		text-decoration: none;
+	}
